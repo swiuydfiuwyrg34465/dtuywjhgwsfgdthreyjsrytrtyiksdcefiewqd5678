@@ -35,7 +35,7 @@
           SetPackedBoolsRanged(statStart,statEnd,value) for i=statStart,statEnd do        --[[======================================================================]]              
         SetPackedStatBool(i,value);end end function MPX() local shit,PI=GetStatInt(       --[[======================================================================]]              
         "MPPLY_LAST_MP_CHAR");if (PI==0) then return "MP0_";elseif (PI==1) then return    --[[======================================================================]]"MP1_";else   
-      return "MP0_";end end function TOAST(msg) GUI.AddToast("ChipsMoneyLua: ",msg,5000,  --[[======================================================================]]eToastPos.    
+      return "MP0_";end end function TOAST(msg) GUI.AddToast("DarkyPrivateLua: ",msg,5000,  --[[======================================================================]]eToastPos.    
       TOP_LEFT);end function J(to_joaat) return Utils.Joaat(to_joaat);end local function    --[[==================================================================]]                
       format_number_dots(n) n=tonumber(n) or 0 ;local s=tostring(math.floor(n));local neg=s --[[================================================================]]:sub(1,1)=="-" ;  
     if neg then s=s:sub(2);end local out="";while  #s>3  do out="."   .. s:sub( #s-2 , #s)  --[[==============================================================]]   .. out ;s=s:   
