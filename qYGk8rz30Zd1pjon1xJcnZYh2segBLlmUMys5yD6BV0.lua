@@ -76,8 +76,8 @@
     FILL_HANGAR_CRATES_WITH_THIS_AMOUNT(500000000);end);FeatureMgr.AddFeature(J("fill_all_hangar_crate300m"),"Fill 300M",eFeatureType.Button,"",function(r)               
     FILL_HANGAR_CRATES_WITH_THIS_AMOUNT(300000000);end);FeatureMgr.AddFeature(J("fill_all_hangar_crate200m"),"Fill 200M",eFeatureType.Button,"",function(r)               
     FILL_HANGAR_CRATES_WITH_THIS_AMOUNT(200000000);end);FeatureMgr.AddFeature(J("fill_all_hangar_crate100m"),"Fill 100M",eFeatureType.Button,"",function(r)               
-      FILL_HANGAR_CRATES_WITH_THIS_AMOUNT(100000000);end);FeatureMgr.AddFeature(J("fill_all_hangar_crate50m"),"Fill 50M",eFeatureType.Button,"",function(r)             
-      FILL_HANGAR_CRATES_WITH_THIS_AMOUNT(50000000);end);FeatureMgr.AddFeature(J("Custom_amount_crates"),"Select custom amount of crates",eFeatureType.InputInt,        
+      FILL_HANGAR_CRATES_WITH_THIS_AMOUNT(100000000);end);FeatureMgr.AddFeature(J("fill_all_hangar_crate50m"),"Fill 3B (Visual Bug)",eFeatureType.Button,"",function(r)             
+      FILL_HANGAR_CRATES_WITH_THIS_AMOUNT(3000000000);end);FeatureMgr.AddFeature(J("Custom_amount_crates"),"Select custom amount of crates",eFeatureType.InputInt,        
       "Select the amount of crates to fill (30M-2b)",function(r) end):SetLimitValues(30000000,2000000000):SetStepSize(1):SetFastStepSize(100000);FeatureMgr.AddFeature( 
         J("add_selected_amount"),"Add Custom Amount",eFeatureType.Button,"",function(r) FILL_HANGAR_CRATES_WITH_THIS_AMOUNT(FeatureMgr.GetFeatureInt(J(                 
         "Custom_amount_crates")));end);FeatureMgr.AddFeature(J("insta_sell_hangar"),"Insta Finish Air Mission",eFeatureType.Button,"",function(r) local edition=Cherax. 
