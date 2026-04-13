@@ -78,7 +78,7 @@
     FILL_HANGAR_CRATES_WITH_THIS_AMOUNT(200000000);end);FeatureMgr.AddFeature(J("fill_all_hangar_crate100m"),"Fill 100M",eFeatureType.Button,"",function(r)               
       FILL_HANGAR_CRATES_WITH_THIS_AMOUNT(100000000);end);FeatureMgr.AddFeature(J("fill_all_hangar_crate50m"),"Fill 3B (Visual Bug)",eFeatureType.Button,"",function(r)             
       FILL_HANGAR_CRATES_WITH_THIS_AMOUNT(3000000000);end);FeatureMgr.AddFeature(J("Custom_amount_crates"),"Select custom amount of crates",eFeatureType.InputInt,        
-      "Select the amount of crates to fill (30M-2b)",function(r) end):SetLimitValues(30000000,2000000000):SetStepSize(1):SetFastStepSize(100000);FeatureMgr.AddFeature( 
+      "Select the amount of crates to fill (5M-2b)",function(r) end):SetLimitValues(5000000,2000000000):SetStepSize(1):SetFastStepSize(100000);FeatureMgr.AddFeature( 
         J("add_selected_amount"),"Add Custom Amount",eFeatureType.Button,"",function(r) FILL_HANGAR_CRATES_WITH_THIS_AMOUNT(FeatureMgr.GetFeatureInt(J(                 
         "Custom_amount_crates")));end);FeatureMgr.AddFeature(J("insta_sell_hangar"),"Insta Finish Air Mission",eFeatureType.Button,"",function(r) local edition=Cherax. 
         GetEdition();if (edition=="EE") then TOAST("Detected Edition: Enhanced\nApplying EE values");SetLocalInt("gb_smuggler",1991 + 1035 ,0);SetLocalInt(             
